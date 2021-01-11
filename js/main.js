@@ -321,6 +321,10 @@
 
 setInterval(function() { makeTimer(); }, 1000);
 
+/* LOADPAGE Sections */
+
+$("#website-header").load("header.html");
+$("#website-footer").load("footer.html");
 
 })(jQuery);
 
