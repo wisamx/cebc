@@ -18,35 +18,16 @@
 			color: #fff;
 		}
 
+		.sticky-header-padding {
+			height: 82px;
+		}
+
 		.navbar-brand {
 			font-family: 'Markazi Text', serif !important;
 			font-size: 21px !important;
 			line-height: 1.2em !important;
 		}
-		.homepage-intro {
-			height: 100vh;
-			background-image: url('../images/cebc.jpg');
-			background-repeat: no-repeat;
-			background-position: center center;
-			background-size: cover;
-			background-attachment: fixed;
-		}
-		.homepage-intro::before {
-			content: '';
-			position: absolute;
-			left: 0;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			background-color: #00000033;
-		}
-		.homepage-intro .title {
-			font-size: 4rem;
-		}
-		.homepage-intro .subtitle {
-			font-size: 1.5rem;
-		}
-		
+
 		.navbar-brand:before {
 			position: absolute;
 			top: 30px;
@@ -89,8 +70,51 @@
 			z-index: 9;
 		}
 
-
+		/* main menu bigger font size */
+		.navbar li a {
+			font-size: 1.1rem;
+		}
+		.navbar-dark .navbar-nav .nav-link {
+			color: #d9d9d9;
+		}
+		
 		.site-header.sticky {
 			background-color: #222;
 			padding: 0 !important;
+		}
+		
+		
+		
+		
+		
+		
+		
+		.homepage-intro {
+			height: 100vh;
+			background-image: url('../images/cebc.jpg');
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+		.homepage-intro::before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			/*background-color: #00000033;*/
+			background-color: #00000047;
+		}
+		.homepage-intro .title {
+			font-size: 4rem;
+		}
+		.homepage-intro .subtitle {
+			font-size: 1.5rem;
+		}
+		
+		
+		.site-header {
+			transition: all 300ms;
 		}

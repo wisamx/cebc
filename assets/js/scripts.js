@@ -2,21 +2,16 @@
 
 jQuery(document).ready(function(){
 
-	jQuery(window).scroll(function(){
-		
-	});
-
-	window.onscroll = function() { myFunction() };
-	var header = document.getElementById("myHeader");
-	var sticky = header.offsetTop;
-	function myFunction() {
-	  if (window.pageYOffset > sticky) {
-		header.classList.add("sticky");
-	  } else {
-		header.classList.remove("sticky");
-	  }
-	}
-	
+	if (jQuery('body').hasClass('home')) {
+		jQuery(window).scroll(function(){
+			var headerTop = jQuery('.site-header').offset().top;
+			if (headerTop > 100) {
+				jQuery('.site-header').addClass('sticky');
+			} else {
+				jQuery('.site-header').removeClass('sticky');
+			}
+		});
+	}	
 
     /*var data;
     jQuery.ajax({
