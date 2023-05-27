@@ -20,8 +20,9 @@ jQuery(document).ready(function(){
     dataType: "text",
     success: function(response)
     {
-        data = jQuery.csv.toArrays(response);
+        //data = jQuery.csv.toArrays(response);
 		var data = Papa.parse(response).data;
+		console.log();
         generateHtmlTable(data);
     }
     });
