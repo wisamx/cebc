@@ -13,7 +13,7 @@ jQuery(document).ready(function(){
 		});
 	}	
 
-    /*var data;
+    var data;
     jQuery.ajax({
     type: "GET",  
     url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vRR6HwfElvArNDMu4awPJzX_66RgU-igdILS80lwmy330kF3992iDKATgkk_fsLsojsGktMTY8t2Eb_/pub?gid=0&single=true&output=csv",
@@ -57,9 +57,9 @@ jQuery(document).ready(function(){
         });
         html += '</tbody>';
         html += '</table>';
-        jQuery('#csv-display').append(html + 'xxxxxxxxxxx');
+        jQuery('#csv-display').append(html);
     }
-    }*/
+    }
 
 
 });
