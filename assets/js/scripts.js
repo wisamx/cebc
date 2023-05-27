@@ -21,6 +21,7 @@ jQuery(document).ready(function(){
     success: function(response)
     {
         data = jQuery.csv.toArrays(response);
+		var data = Papa.parse(response).data;
         generateHtmlTable(data);
     }
     });
